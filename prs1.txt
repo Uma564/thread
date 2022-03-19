@@ -1,0 +1,11 @@
+class mul extends Thread{
+public void run(){
+System.out.println("thread is running..");
+}
+public static void main(String args[]){
+mul a=new mu();
+a.start();
+}
+}
+
+
