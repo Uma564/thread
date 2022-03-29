@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+  
+class GFG {
+    public static void main(String[] args)
+    {
+        Collection<String> collection = new ArrayList<>();
+        collection.add("45");
+        collection.add("86");
+        collection.add("98");
+        collection.add("92");
+        collection.add("86");
+        collection.add("21");
+        collection.add("16");
+        System.out.println(
+            "Displaying the initial collection\n");
+        System.out.println(collection);
+        HashSet<String> hashSet = new HashSet<>(collection);
+        System.out.println("\nDisplaying the HashSet\n");
+        System.out.println(hashSet);
+        collection.clear();
+        collection.addAll(hashSet);
+        System.out.println(
+            "\nDisplaying the collection after deleting duplicates entries\n");
+        System.out.println(collection);
+    }
+}
+
+
