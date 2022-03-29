@@ -1,0 +1,15 @@
+import java.util.HashSet;
+
+class Main {
+    public static void main(String[] args) {
+        HashSet<Integer> eNumber = new HashSet<>();
+        eNumber.add(1);
+        eNumber.add(2);
+        eNumber.add(3);
+        eNumber.add(4);
+        System.out.println("HashSet: " + eNumber);
+
+        HashSet<Integer> numbers = new HashSet<>();
+        numbers.addAll(eNumber);
+    }
+}
